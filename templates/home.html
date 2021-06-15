@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>RAM</title>
+</head>
+<body>
+    <h1>FRAUD DECECTION FOR CREDICTCARD</h1>
+    <form action='/predict' method="POST" enctype="multipart/form-data">
+        <span id="text">upload .csv file to pridict:</span>
+        <input type="file" name="input" required="required"/><br>
+        <button type="submit">calcualte</button>
+    </form>
+    <br>
+    <p>{{ prediction_text }}</p>
+</body>
+</html>
